@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer components {
+  .page {
+    @apply font-['Times_New_Roman',Times,serif] bg-white text-black p-[40px_20px];
+  }
+
+  .timeline {
+    @apply relative max-w-[800px] mx-auto;
+  }
+
+  .timeline-line {
+    @apply absolute left-1/2 -translate-x-1/2 w-[2px] h-full bg-black max-[768px]:left-[16px];
+  }
+
+  .ev {
+    @apply relative w-[46%] py-[10px] mb-6 max-[768px]:w-[85%] max-[768px]:ml-[40px] max-[768px]:text-left;
+  }
+
+  .ev-left {
+    @apply text-right mr-auto;
+  }
+
+  .ev-right {
+    @apply ml-auto;
+  }
+
+  .ev-dot {
+    @apply absolute top-[14px] w-[8px] h-[8px] rounded-full bg-black max-[768px]:left-[-30px] max-[768px]:right-auto;
+  }
+
+  .ev-dot-left {
+    @apply right-[-28px];
+  }
+
+  .ev-dot-right {
+    @apply left-[-28px];
+  }
+
+  .ev-year {
+    @apply text-[0.85rem] font-bold;
+  }
+
+  .ev-title {
+    @apply text-[0.9rem] font-normal my-[2px];
+  }
+
+  .ev-desc {
+    @apply text-[0.8rem] text-[#333] leading-[1.5];
+  }
+
+  .refs {
+    @apply max-w-[800px] mx-auto mt-[50px] border-t border-black pt-[20px];
+  }
+
+  .refs-title {
+    @apply text-[1rem] mb-3 font-bold;
+  }
+
+  .refs-list {
+    @apply list-none p-0;
+  }
+
+  .ref-item {
+    @apply text-[0.8rem] leading-[1.6] mb-[6px] indent-[-2em] pl-[2em];
+  }
+}
